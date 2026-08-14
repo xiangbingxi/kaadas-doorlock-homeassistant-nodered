@@ -5,6 +5,10 @@
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Integration-blue.svg)](https://www.home-assistant.io/)
 [![fnOS](https://img.shields.io/badge/fnOS-Tested-brightgreen.svg)](https://www.fnnas.com/)
 
+[**English Documentation**](./README_EN.md)
+
+---
+
 通过 Node-RED 轮询凯迪仕云端 API，将凯迪仕智能门锁无缝接入 Home Assistant，并可桥接至 Apple HomeKit 实现**门锁状态监控、电量读取、访客门铃即时抓拍、预警抓拍以及 Apple 设备原生门铃卡片弹窗**。
 
 > 💡 **特别说明**：
