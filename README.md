@@ -5,18 +5,19 @@
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Integration-blue.svg)](https://www.home-assistant.io/)
 [![fnOS](https://img.shields.io/badge/fnOS-Tested-brightgreen.svg)](https://www.fnnas.com/)
 
-通过 Node-RED 轮询凯迪仕云端 API，将凯迪仕智能门锁无缝接入 Home Assistant，并桥接至 Apple HomeKit 实现**门锁状态监控、电量读取、访客门铃即时抓拍、预警抓拍以及 Apple 设备原生门铃卡片弹窗**。
+通过 Node-RED 轮询凯迪仕云端 API，将凯迪仕智能门锁无缝接入 Home Assistant，并可桥接至 Apple HomeKit 实现**门锁状态监控、电量读取、访客门铃即时抓拍、预警抓拍以及 Apple 设备原生门铃卡片弹窗**。
 
 > 💡 **特别说明**：
 > 1. 本项目方案基于 **飞牛 OS (fnOS)** 宿主机环境下的 Docker 容器化部署测试通过。
 > 2. 各型号凯迪仕门锁的接口字段可能存在细微差异，**具体请求参数与数据结构请务必以个人实际抓包结果为准**。
 > 3. 抓拍图片的本地保存路径（如 `/config/www/lock_latest.jpg`）需根据你的 Node-RED 与 Home Assistant 实际挂载路径自行调整。
+> 4. **关于 HomeKit**：HomeKit 桥接为可选功能。**若仅在 Home Assistant 内使用、不需要接入 Apple HomeKit，则完全不需要配置 HomeKit Bridge 桥接**。
 
 ---
 
 ## 📸 效果展示
 
-### 1. Apple HomeKit 原生联动与抓拍
+### 1. Apple HomeKit 原生联动与抓拍（可选）
 | Apple 家庭 App 概览 | 猫眼抓拍大图界面 |
 | :---: | :---: |
 | ![HomeKit Overview](images/homekit_overview.png) | ![HomeKit Camera](images/homekit_camera.png) |
@@ -76,7 +77,8 @@
          still_image_url: "[http://127.0.0.1:8123/local/lock_latest.jpg](http://127.0.0.1:8123/local/lock_latest.jpg)"
          verify_ssl: false
      ```
-3. **配置 HomeKit 桥接**：
+3. **配置 HomeKit 桥接 (可选)**：
+   * *注：若不需要接入 Apple HomeKit，可跳过此步。*
    * 在 **设置 ➔ 设备与服务 ➔ HomeKit Bridge** 中，将门铃实体 `binary_sensor.kaadas_doorbell`（类型设置为 `motion` 或 `doorbell`）与摄像头 `camera.men_suo_mao_yan_zhua_pai` 关联并同步至 Apple 家庭。
 
 ---
@@ -133,5 +135,5 @@ Node-RED 下载的图片需要写入 Home Assistant 能够读取的本地目录�
 ┌─────────────────────────────────────────────────────────────┐
 │ 1. [下载抓拍图片] ➔ OSS自动旋转90° ➔ 覆盖保存为 /config/www/lock_latest.jpg
 │ 2. [设置 ON] ➔ Kaadas_Doorbell 门铃触发 ➔ 延时2秒 ➔ [设置 OFF]
-│ 3. [Apple HomeKit 联动] ➔ iPhone/Apple TV 弹出带实况抓拍的原生大横幅！
+│ 3. [Apple HomeKit 联动 (可选)] ➔ iPhone/Apple TV 弹出带实况抓拍的原生大横幅！
 └─────────────────────────────────────────────────────────────┘
