@@ -3,8 +3,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node-RED](https://img.shields.io/badge/Node--RED-Supported-red.svg)](https://nodered.org/)
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Integration-blue.svg)](https://www.home-assistant.io/)
+[![fnOS](https://img.shields.io/badge/fnOS-Tested-brightgreen.svg)](https://www.fnnas.com/)
 
 通过 Node-RED 轮询凯迪仕云端 API，将凯迪仕智能门锁无缝接入 Home Assistant，并桥接至 Apple HomeKit 实现**门锁状态监控、电量读取、访客门铃即时抓拍、预警抓拍以及 Apple 设备原生门铃卡片弹窗**。
+
+> 💡 **特别说明**：
+> 1. 本项目方案基于 **飞牛 OS (fnOS)** 宿主机环境下的 Docker 容器化部署测试通过。
+> 2. 各型号凯迪仕门锁的接口字段可能存在细微差异，**具体请求参数与数据结构请务必以个人实际抓包结果为准**。
+> 3. 抓拍图片的本地保存路径（如 `/config/www/lock_latest.jpg`）需根据你的 Node-RED 与 Home Assistant 实际挂载路径自行调整。
 
 ---
 
@@ -75,15 +81,16 @@
 
 ---
 
-### 2. Node-RED 目录映射 (Docker 部署必看)
-为了使 Node-RED 下载的图片能被 Home Assistant 读取，请确保在部署 Node-RED 容器时，已将 Home Assistant 的 `www` 目录挂载进 Node-RED：
-* **宿主机路径**：`/path/to/homeassistant/config/www`
-* **Node-RED 容器内路径**：`/config/www`
+### 2. 目录映射与保存路径 (以飞牛 fnOS / Docker 为例)
+Node-RED 下载的图片需要写入 Home Assistant 能够读取的本地目录（即 HA 的 `www` 目录）：
+* **fnOS / 宿主机路径**：`/vol1/1000/docker/homeassistant/config/www`（根据自身 fnOS 存储空间路径确定）
+* **Node-RED 容器内挂载点**：`/config/www`
+* **说明**：在 Node-RED 的 `覆盖保存为本地图片` 节点中，默认写入路径为 `/config/www/lock_latest.jpg`，请根据实际挂载映射关系按需调整。
 
 ---
 
 ### 3. 抓包获取凯迪仕凭据
-使用抓包工具（如 iOS 上的 Stream / Thor，或电脑端 Charles / mitmproxy）抓取凯迪仕 App 请求，记录以下 3 个核心凭据：
+使用抓包工具（如 iOS 上的 Stream / Thor，或电脑端 Charles / mitmproxy）抓取凯迪仕 App 请求，记录以下 3 个核心凭据（**具体参数以个人实际抓包为准**）：
 * **`token`**：请求头中的认证凭据（形如 `GR6qN8sz...`）。
 * **`wifiSN`**：门锁的唯一序列号（形如 `K2A12523...`）。
 * **`uid`**：用户账号 ID（形如 `6062767...`）。
