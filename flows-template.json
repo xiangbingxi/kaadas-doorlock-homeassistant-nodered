@@ -1,0 +1,1328 @@
+[
+    {
+        "id": "aa7a5ecfb8874398",
+        "type": "tab",
+        "label": "凯迪仕门锁",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "969c5ebe3c82c92c",
+        "type": "server",
+        "name": "HomeAssistant",
+        "version": 6,
+        "addon": false,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": [
+            "y",
+            "yes",
+            "true",
+            "on",
+            "home",
+            "open"
+        ],
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": "3",
+        "areaSelector": "friendlyName",
+        "deviceSelector": "friendlyName",
+        "entitySelector": "friendlyName",
+        "statusSeparator": ": ",
+        "statusYear": "numeric",
+        "statusMonth": "2-digit",
+        "statusDay": "2-digit",
+        "statusHourCycle": "h23",
+        "statusTimeFormat": "h:m:s",
+        "enableGlobalContextStore": false
+    },
+    {
+        "id": "7bf643089032e71c",
+        "type": "ha-entity-config",
+        "server": "969c5ebe3c82c92c",
+        "deviceConfig": "",
+        "name": "sensor config for 凯迪仕门锁状态",
+        "version": "6",
+        "entityType": "sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Kaadas_Last_Content"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": ""
+            },
+            {
+                "property": "state_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "7db7de2f21d5dd9b",
+        "type": "ha-entity-config",
+        "z": "aa7a5ecfb8874398",
+        "server": "969c5ebe3c82c92c",
+        "deviceConfig": "",
+        "name": "sensor config for 凯迪仕User1",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Kaadas_User1"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            }
+        ],
+        "resend": true,
+        "debugEnabled": false
+    },
+    {
+        "id": "c791341ca881391d",
+        "type": "ha-entity-config",
+        "server": "969c5ebe3c82c92c",
+        "deviceConfig": "",
+        "name": "sensor config for 凯迪仕User2",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Kaadas_User2"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "e68005e1f77a0f0f",
+        "type": "ha-entity-config",
+        "server": "969c5ebe3c82c92c",
+        "deviceConfig": "",
+        "name": "sensor config for 凯迪仕User3",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Kaadas_User3"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "c2a46e2e8e12dc98",
+        "type": "ha-entity-config",
+        "server": "969c5ebe3c82c92c",
+        "deviceConfig": "",
+        "name": "sensor config for 凯迪仕User4",
+        "version": "6",
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Kaadas_User4"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "16f03973b6fb4a9b",
+        "type": "ha-entity-config",
+        "server": "969c5ebe3c82c92c",
+        "deviceConfig": "",
+        "name": "sensor config for 凯迪仕门锁信息",
+        "version": "6",
+        "entityType": "sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Kaadas_info"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": ""
+            },
+            {
+                "property": "state_class",
+                "value": ""
+            }
+        ],
+        "resend": true,
+        "debugEnabled": false
+    },
+    {
+        "id": "5744bc020042648a",
+        "type": "ha-entity-config",
+        "server": "969c5ebe3c82c92c",
+        "deviceConfig": "",
+        "name": "sensor config for 凯迪仕门铃",
+        "version": 6,
+        "entityType": "binary_sensor",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Kaadas_Doorbell"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "motion"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "edd7e20b0a373ad6",
+        "type": "inject",
+        "z": "aa7a5ecfb8874398",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 340,
+        "wires": [
+            [
+                "16e0007bfafd449a"
+            ]
+        ]
+    },
+    {
+        "id": "cd4853567d06954f",
+        "type": "function",
+        "z": "aa7a5ecfb8874398",
+        "name": "获取最近门锁事件",
+        "func": "// =========================================================\n// 【必填项 1】：填入抓包获取的凯迪仕 token 和门锁 wifiSN 序列号\n// =========================================================\nmsg.headers = {\n    'Host': 'app.kaadas.com:34000',\n    'token' : 'YOUR_KAADAS_TOKEN', // 👈 替换为你的真实 Token\n    'ver': '20231127',\n    'Content-Length': '35',\n    'reqSource': 'app',\n    'phoneName': 'iPhone',\n    'lang': 'zh_CN',\n    'User-Agent': 'KaadasLock/6.14.3 (iPhone; iOS 27.0; Scale/3.00)',\n    'Connection' : 'keep-alive',\n    'Content-Type' : 'application/json'\n};\n\nmsg.payload = {\n    \"wifiSN\": \"YOUR_LOCK_WIFI_SN\", // 👈 替换为你的门锁 SN\n    \"page\": 1\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 340,
+        "wires": [
+            [
+                "b1dc19b7ec46daad"
+            ]
+        ]
+    },
+    {
+        "id": "b1dc19b7ec46daad",
+        "type": "http request",
+        "z": "aa7a5ecfb8874398",
+        "name": "获取门锁记录",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://app.kaadas.com:34000/app/record/operation/list",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 340,
+        "y": 460,
+        "wires": [
+            [
+                "24c65eb84f8caf19"
+            ]
+        ]
+    },
+    {
+        "id": "16e0007bfafd449a",
+        "type": "delay",
+        "z": "aa7a5ecfb8874398",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "cd4853567d06954f"
+            ]
+        ]
+    },
+    {
+        "id": "891efb830b4860c5",
+        "type": "ha-sensor",
+        "z": "aa7a5ecfb8874398",
+        "name": "凯迪仕门锁日志",
+        "entityConfig": "7bf643089032e71c",
+        "version": 0,
+        "state": "payload.lastTextContent",
+        "stateType": "msg",
+        "attributes": [
+            {
+                "property": "TextContent",
+                "value": "payload.lastTextContent",
+                "valueType": "msg"
+            },
+            {
+                "property": "Date",
+                "value": "payload.lastDate",
+                "valueType": "msg"
+            },
+            {
+                "property": "PwdNum",
+                "value": "payload.lastPwdNum",
+                "valueType": "msg"
+            },
+            {
+                "property": "PwdNickname",
+                "value": "payload.lastPwdNickname",
+                "valueType": "msg"
+            }
+        ],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 660,
+        "y": 640,
+        "wires": [
+            [
+                "76601362d8b9fc46"
+            ]
+        ]
+    },
+    {
+        "id": "24c65eb84f8caf19",
+        "type": "function",
+        "z": "aa7a5ecfb8874398",
+        "name": "提取最近一条消息",
+        "func": "var arr = msg.payload.data;\n\nif (!arr || arr.length === 0) {\n    return null;\n}\n\nvar lastTime = arr[0].time;\nvar lastTextContent = arr[0].textContent || \"门锁新动态\";\nvar lastImgUrl = arr[0].picUrl \n              || arr[0].imgUrl \n              || arr[0].snapshotUrl \n              || arr[0].picture \n              || arr[0].fileUrl \n              || arr[0].mediaUrl \n              || arr[0].alarmPic \n              || \"\";\n\nvar previousTime = context.get('lastPushedTime') || \"\";\n\nif (lastTime && lastTime !== previousTime) {\n    context.set('lastPushedTime', lastTime);\n\n    msg.payload = {\n        \"lastTime\": lastTime,\n        \"lastTextContent\": lastTextContent,\n        \"lastImgUrl\": lastImgUrl\n    };\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 460,
+        "wires": [
+            [
+                "7b11a41484d259aa",
+                "891efb830b4860c5"
+            ]
+        ]
+    },
+    {
+        "id": "7b11a41484d259aa",
+        "type": "switch",
+        "z": "aa7a5ecfb8874398",
+        "name": "判断人员开锁状态",
+        "property": "payload.lastPwdNum",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 790,
+        "y": 460,
+        "wires": [
+            [
+                "324cc25d3605864e"
+            ],
+            [
+                "c313e7cb25d88cac"
+            ],
+            [
+                "19e4871dd86a0c1e"
+            ],
+            [
+                "03624d9fde4f3012"
+            ]
+        ]
+    },
+    {
+        "id": "76601362d8b9fc46",
+        "type": "switch",
+        "z": "aa7a5ecfb8874398",
+        "name": "判断是否关门",
+        "property": "payload.lastTextContent",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "门已上锁",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 860,
+        "y": 640,
+        "wires": [
+            [
+                "1c04921225810fe9"
+            ]
+        ]
+    },
+    {
+        "id": "1c04921225810fe9",
+        "type": "change",
+        "z": "aa7a5ecfb8874398",
+        "name": "off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 640,
+        "wires": [
+            [
+                "41bdeb16862df68a",
+                "d00ceeb73b19bf9b",
+                "ce64539edbf5c3eb",
+                "d8d92abbd11fa265"
+            ]
+        ]
+    },
+    {
+        "id": "324cc25d3605864e",
+        "type": "change",
+        "z": "aa7a5ecfb8874398",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 360,
+        "wires": [
+            [
+                "41bdeb16862df68a"
+            ]
+        ]
+    },
+    {
+        "id": "c313e7cb25d88cac",
+        "type": "change",
+        "z": "aa7a5ecfb8874398",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 420,
+        "wires": [
+            [
+                "d00ceeb73b19bf9b"
+            ]
+        ]
+    },
+    {
+        "id": "19e4871dd86a0c1e",
+        "type": "change",
+        "z": "aa7a5ecfb8874398",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 480,
+        "wires": [
+            [
+                "ce64539edbf5c3eb"
+            ]
+        ]
+    },
+    {
+        "id": "03624d9fde4f3012",
+        "type": "change",
+        "z": "aa7a5ecfb8874398",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 540,
+        "wires": [
+            [
+                "d8d92abbd11fa265"
+            ]
+        ]
+    },
+    {
+        "id": "41bdeb16862df68a",
+        "type": "ha-binary-sensor",
+        "z": "aa7a5ecfb8874398",
+        "name": "用户1状态",
+        "entityConfig": "7db7de2f21d5dd9b",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 1310,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e5c1ab168c5cbc9",
+        "type": "function",
+        "z": "aa7a5ecfb8874398",
+        "name": "获取门锁信息请求数据设置",
+        "func": "// =========================================================\n// 【必填项 2】：填入抓包获取的凯迪仕 token 和 uid\n// =========================================================\nmsg.headers = {\n    'Host': 'app.kaadas.com:34000',\n    'token' : 'YOUR_KAADAS_TOKEN', // 👈 替换为你的真实 Token\n    'ver': '20230412',\n    'Content-Length': '54',\n    'reqSource': 'app',\n    'phoneName': 'iPhone',\n    'lang': 'zh_CN',\n    'User-Agent': 'KaadasLock/6.14.3 (iPhone; iOS 27.0; Scale/3.00)',\n    'Connection' : 'keep-alive',\n    'Content-Type' : 'application/json'\n};\n\nmsg.payload = {\n     \"uid\": \"YOUR_KAADAS_UID\", // 👈 替换为你的用户 UID\n     \"modelSearchType\": 2\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 720,
+        "wires": [
+            [
+                "c765c1c0c7048e8b"
+            ]
+        ]
+    },
+    {
+        "id": "c765c1c0c7048e8b",
+        "type": "http request",
+        "z": "aa7a5ecfb8874398",
+        "name": "获取门锁信息",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://app.kaadas.com:34000/app/user/findAllBindDevice",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 620,
+        "y": 720,
+        "wires": [
+            [
+                "73a45def92c84c88"
+            ]
+        ]
+    },
+    {
+        "id": "78a9ce61e0af3d58",
+        "type": "inject",
+        "z": "aa7a5ecfb8874398",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "14400",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 720,
+        "wires": [
+            [
+                "9e5c1ab168c5cbc9"
+            ]
+        ]
+    },
+    {
+        "id": "30bf264b35f33a86",
+        "type": "debug",
+        "z": "aa7a5ecfb8874398",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "d00ceeb73b19bf9b",
+        "type": "ha-binary-sensor",
+        "z": "aa7a5ecfb8874398",
+        "name": "用户2状态",
+        "entityConfig": "c791341ca881391d",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 1310,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce64539edbf5c3eb",
+        "type": "ha-binary-sensor",
+        "z": "aa7a5ecfb8874398",
+        "name": "用户3状态",
+        "entityConfig": "e68005e1f77a0f0f",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 1310,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8d92abbd11fa265",
+        "type": "ha-binary-sensor",
+        "z": "aa7a5ecfb8874398",
+        "name": "用户4状态",
+        "entityConfig": "c2a46e2e8e12dc98",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 1310,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49666cc943201fbb",
+        "type": "function",
+        "z": "aa7a5ecfb8874398",
+        "name": "提取需要的门锁信息",
+        "func": "var arr = msg.payload.data.wifiList;\n\nif (!arr || arr.length === 0) {\n    return null;\n}\n\nvar powerVal = arr[0].power !== undefined ? String(arr[0].power) : \"100\";\n\nmsg.payload = {\n    \"state\": powerVal,\n    \"power\": powerVal,\n    \"productModel\": arr[0].productModel || \"\",\n    \"lockNickname\": arr[0].lockNickname || \"\",\n    \"adminName\": arr[0].adminName || \"\",\n    \"wifiAddress\": arr[0].wifiAddress || \"\",\n    \"camera_version\": arr[0].camera_version || \"\",\n    \"wifiName\": arr[0].wifiName || \"\",\n    \"openCount\": arr[0].openCount !== undefined ? String(arr[0].openCount) : \"0\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 840,
+        "wires": [
+            [
+                "30bf264b35f33a86",
+                "0bee093f59244142"
+            ]
+        ]
+    },
+    {
+        "id": "0bee093f59244142",
+        "type": "ha-sensor",
+        "z": "aa7a5ecfb8874398",
+        "name": "凯迪仕门锁信息",
+        "entityConfig": "16f03973b6fb4a9b",
+        "version": 0,
+        "state": "payload.power",
+        "stateType": "msg",
+        "attributes": [
+            {
+                "property": "productModel",
+                "value": "payload.productModel",
+                "valueType": "msg"
+            },
+            {
+                "property": "adminName",
+                "value": "payload.adminName",
+                "valueType": "msg"
+            },
+            {
+                "property": "wifiAddress",
+                "value": "payload.wifiAddress",
+                "valueType": "msg"
+            },
+            {
+                "property": "camera_version",
+                "value": "payload.camera_version",
+                "valueType": "msg"
+            },
+            {
+                "property": "wifiName",
+                "value": "payload.wifiName",
+                "valueType": "msg"
+            },
+            {
+                "property": "power",
+                "value": "payload.power",
+                "valueType": "msg"
+            },
+            {
+                "property": "openCount",
+                "value": "payload.openCount",
+                "valueType": "msg"
+            }
+        ],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 1200,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73a45def92c84c88",
+        "type": "switch",
+        "z": "aa7a5ecfb8874398",
+        "name": "判断是否获取成功",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 830,
+        "y": 720,
+        "wires": [
+            [
+                "49666cc943201fbb"
+            ]
+        ]
+    },
+    {
+        "id": "29a4539fc020cb48",
+        "type": "inject",
+        "z": "aa7a5ecfb8874398",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1020,
+        "wires": [
+            [
+                "2931c456a2dc80f3"
+            ]
+        ]
+    },
+    {
+        "id": "2931c456a2dc80f3",
+        "type": "function",
+        "z": "aa7a5ecfb8874398",
+        "name": "访客门铃请求设置",
+        "func": "// =========================================================\n// 【必填项 3】：填入抓包获取的凯迪仕 token 和门锁 wifiSN 序列号\n// =========================================================\nmsg.headers = {\n    'Host': 'app.kaadas.com:34000',\n    'token' : 'YOUR_KAADAS_TOKEN', // 👈 替换为你的真实 Token\n    'ver': '20230913',\n    'Content-Length': '35',\n    'reqSource': 'app',\n    'phoneName': 'iPhone',\n    'lang': 'zh_CN',\n    'User-Agent': 'KaadasLock/6.14.3 (iPhone; iOS 27.0; Scale/3.00)',\n    'Connection' : 'keep-alive',\n    'Content-Type' : 'application/json'\n};\n\nmsg.payload = {\n    \"wifiSN\": \"YOUR_LOCK_WIFI_SN\", // 👈 替换为你的门锁 SN\n    \"page\": 1\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1020,
+        "wires": [
+            [
+                "df394682f97ab7a9"
+            ]
+        ]
+    },
+    {
+        "id": "df394682f97ab7a9",
+        "type": "http request",
+        "z": "aa7a5ecfb8874398",
+        "name": "获取访客门铃记录",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://app.kaadas.com:34000/app/record/operation/visit",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 570,
+        "y": 1020,
+        "wires": [
+            [
+                "e73a7f421a63275b",
+                "189110eaf69c0b79"
+            ]
+        ]
+    },
+    {
+        "id": "e73a7f421a63275b",
+        "type": "function",
+        "z": "aa7a5ecfb8874398",
+        "name": "提取最近抓拍图",
+        "func": "var arr = msg.payload.data;\n\nif (!arr || !Array.isArray(arr) || arr.length === 0) {\n    return null;\n}\n\nvar targetRecord = null;\nfor (var i = 0; i < arr.length; i++) {\n    var item = arr[i];\n    var img = item.thumbUrl || item.picUrl || item.imgUrl || item.snapshotUrl || \"\";\n    if (img && img.trim() !== \"\") {\n        targetRecord = item;\n        targetRecord.extractedImgUrl = img;\n        break;\n    }\n}\n\nif (!targetRecord) {\n    return null;\n}\n\nvar lastTime = Number(targetRecord.time);\nvar previousTime = context.get('lastVisitorTime') || 0;\n\nif (lastTime !== previousTime) {\n    context.set('lastVisitorTime', lastTime);\n    global.set('lastGlobalCameraTime', lastTime);\n\n    msg.payload = {\n        \"lastTime\": lastTime,\n        \"lastTextContent\": targetRecord.textContent || \"有人按门铃\",\n        \"lastImgUrl\": targetRecord.extractedImgUrl\n    };\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 1020,
+        "wires": [
+            [
+                "173fc01c7dc0d426"
+            ]
+        ]
+    },
+    {
+        "id": "cdf3d59636201270",
+        "type": "http request",
+        "z": "aa7a5ecfb8874398",
+        "name": "下载抓拍图片",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "{{{payload.lastImgUrl}}}?x-oss-process=image/rotate,90",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1200,
+        "y": 1020,
+        "wires": [
+            [
+                "fbbfea306ae6514d"
+            ]
+        ]
+    },
+    {
+        "id": "fbbfea306ae6514d",
+        "type": "file",
+        "z": "aa7a5ecfb8874398",
+        "name": "覆盖保存为本地图片",
+        "filename": "/config/www/lock_latest.jpg",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1420,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "173fc01c7dc0d426",
+        "type": "switch",
+        "z": "aa7a5ecfb8874398",
+        "name": "判断是否有图片",
+        "property": "payload.lastImgUrl",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1000,
+        "y": 1020,
+        "wires": [
+            [
+                "cdf3d59636201270",
+                "9eecf623e75a2227",
+                "b3d10229eae47886"
+            ]
+        ]
+    },
+    {
+        "id": "9eecf623e75a2227",
+        "type": "change",
+        "z": "aa7a5ecfb8874398",
+        "name": "设置 ON",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1180,
+        "y": 1080,
+        "wires": [
+            [
+                "02326b37b1cf11b6"
+            ]
+        ]
+    },
+    {
+        "id": "02326b37b1cf11b6",
+        "type": "delay",
+        "z": "aa7a5ecfb8874398",
+        "name": "延时 2 秒",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1360,
+        "y": 1080,
+        "wires": [
+            [
+                "7b4cd458fd9b06f9"
+            ]
+        ]
+    },
+    {
+        "id": "7b4cd458fd9b06f9",
+        "type": "change",
+        "z": "aa7a5ecfb8874398",
+        "name": "设置 OFF",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1520,
+        "y": 1080,
+        "wires": [
+            [
+                "f4159b09d299b2a5"
+            ]
+        ]
+    },
+    {
+        "id": "f4159b09d299b2a5",
+        "type": "ha-binary-sensor",
+        "z": "aa7a5ecfb8874398",
+        "name": "凯迪仕门铃",
+        "entityConfig": "5744bc020042648a",
+        "version": 0,
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "inputOverride": "allow",
+        "outputProperties": [],
+        "x": 1710,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3d10229eae47886",
+        "type": "api-call-service",
+        "z": "aa7a5ecfb8874398",
+        "name": "推送抓拍图到手机",
+        "server": "969c5ebe3c82c92c",
+        "version": 7,
+        "debugenabled": true,
+        "action": "notify.YOUR_HA_NOTIFY_SERVICE",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"title\":\"🚪 凯迪仕门锁动态\",\"message\":\"{{payload.lastTextContent}}\",\"data\":{\"image\":\"{{payload.lastImgUrl}}\",\"sound\":\"default\",\"url\":\"app://com.apple.Home\"}}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "notify",
+        "service": "YOUR_HA_NOTIFY_SERVICE",
+        "x": 1210,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "189110eaf69c0b79",
+        "type": "debug",
+        "z": "aa7a5ecfb8874398",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "9805ac9ccb90ae5a",
+        "type": "inject",
+        "z": "aa7a5ecfb8874398",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1180,
+        "wires": [
+            [
+                "f22c702c5f3e01c0"
+            ]
+        ]
+    },
+    {
+        "id": "f22c702c5f3e01c0",
+        "type": "function",
+        "z": "aa7a5ecfb8874398",
+        "name": "预警请求设置",
+        "func": "// =========================================================\n// 【必填项 4】：填入抓包获取的凯迪仕 token 和门锁 wifiSN 序列号\n// =========================================================\nmsg.headers = {\n    'Host': 'app.kaadas.com:34000',\n    'token' : 'YOUR_KAADAS_TOKEN', // 👈 替换为你的真实 Token\n    'ver': '20231127',\n    'Content-Length': '35',\n    'reqSource': 'app',\n    'phoneName': 'iPhone',\n    'lang': 'zh_CN',\n    'User-Agent': 'KaadasLock/6.14.3 (iPhone; iOS 27.0; Scale/3.00)',\n    'Connection' : 'keep-alive',\n    'Content-Type' : 'application/json'\n};\n\nmsg.payload = {\n    \"wifiSN\": \"YOUR_LOCK_WIFI_SN\", // 👈 替换为你的门锁 SN\n    \"page\": 1\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1180,
+        "wires": [
+            [
+                "18f816e78abe79ce"
+            ]
+        ]
+    },
+    {
+        "id": "18f816e78abe79ce",
+        "type": "http request",
+        "z": "aa7a5ecfb8874398",
+        "name": "获取报警抓拍记录",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://app.kaadas.com:34000/app/record/operation/alarm",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 570,
+        "y": 1180,
+        "wires": [
+            [
+                "96225235270fb029"
+            ]
+        ]
+    },
+    {
+        "id": "96225235270fb029",
+        "type": "function",
+        "z": "aa7a5ecfb8874398",
+        "name": "提取预警抓拍",
+        "func": "var arr = msg.payload.data;\n\nif (!arr || !Array.isArray(arr) || arr.length === 0) {\n    return null;\n}\n\nvar targetRecord = null;\nfor (var i = 0; i < arr.length; i++) {\n    var item = arr[i];\n    var img = item.thumbUrl || item.picUrl || item.imgUrl || item.snapshotUrl || \"\";\n    if (img && img.trim() !== \"\") {\n        targetRecord = item;\n        targetRecord.extractedImgUrl = img;\n        break;\n    }\n}\n\nif (!targetRecord) {\n    return null;\n}\n\nvar lastTime = Number(targetRecord.time);\nvar lastGlobalTime = global.get('lastGlobalCameraTime') || 0;\n\nif (lastTime > lastGlobalTime) {\n    global.set('lastGlobalCameraTime', lastTime);\n\n    msg.payload = {\n        \"lastTime\": lastTime,\n        \"lastTextContent\": targetRecord.textContent || \"门锁预警抓拍\",\n        \"lastImgUrl\": targetRecord.extractedImgUrl\n    };\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 1180,
+        "wires": [
+            [
+                "173fc01c7dc0d426"
+            ]
+        ]
+    },
+    {
+        "id": "47ecd7c4298a30a4",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-home-assistant-websocket": "0.80.3"
+        }
+    }
+]
