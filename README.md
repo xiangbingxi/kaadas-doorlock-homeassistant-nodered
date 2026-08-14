@@ -8,6 +8,30 @@
 
 ---
 
+## 📸 效果展示
+
+### 1. Apple HomeKit 原生联动与抓拍
+| Apple 家庭 App 概览 | 猫眼抓拍大图界面 |
+| :---: | :---: |
+| ![HomeKit Overview](images/homekit_overview.png) | ![HomeKit Camera](images/homekit_camera.png) |
+| *图 1：Apple 家庭首页实时展示门锁状态与猫眼微缩快照* | *图 2：点击可全屏查看自动旋转 90° 校正后的正立抓拍大图* |
+
+---
+
+### 2. Home Assistant 仪表盘与活动日志
+| HA 安全区域面板 | 门锁实时活动日志 |
+| :---: | :---: |
+| ![HA Overview](images/ha_overview.png) | ![HA Log](images/ha_log.png) |
+| *图 3：Home Assistant 仪表盘整合门锁开关状态与最新抓拍* | *图 4：自动记录每次开锁/关门时间与对应用户状态日志* |
+
+---
+
+### 3. Node-RED 自动化拓扑全貌
+![Node-RED Architecture](images/flow.png)
+*图 5：包含【门锁操作日志】、【设备与电量信息】、【门铃与预警双轨抓拍流水线】的完整 Node-RED 流配置*
+
+---
+
 ## 🌟 致谢与参考
 
 本项目的基础门锁状态轮询与电量读取思路参考了以下开源项目与社区讨论：
@@ -38,7 +62,7 @@
 1. **安装 Node-RED Companion**：
    * 在 HACS 中搜索并安装 `Node-RED Companion` 集成，安装完成后在 **设置 ➔ 设备与服务** 中添加并启用该集成。
 2. **配置通用摄像头 (Generic Camera)**：
-   * 在 Home Assistant 的 `configuration.yaml` 中添加以下配置（或在 **设备与服务 ➔ 通用摄像头** UI 界面配置）：
+   * 在 Home Assistant 的 `configuration.yaml` 中添加以下配置（或在 **设置 ➔ 设备与服务 ➔ 添加集成 ➔ 通用摄像头 (Generic Camera)** UI 界面配置）：
      ```yaml
      camera:
        - platform: generic
@@ -47,7 +71,7 @@
          verify_ssl: false
      ```
 3. **配置 HomeKit 桥接**：
-   * 在 **设置 ➔ 设备与服务 ➔ HomeKit Bridge** 中，将门铃实体 `binary_sensor.kaadas_doorbell`（类型为 `motion` 或 `doorbell`）与摄像头 `camera.men_suo_mao_yan_zhua_pai` 关联同步到 Apple 家庭。
+   * 在 **设置 ➔ 设备与服务 ➔ HomeKit Bridge** 中，将门铃实体 `binary_sensor.kaadas_doorbell`（类型设置为 `motion` 或 `doorbell`）与摄像头 `camera.men_suo_mao_yan_zhua_pai` 关联并同步至 Apple 家庭。
 
 ---
 
@@ -89,6 +113,8 @@
 ---
 
 ## 🏗️ 运行流程架构
+
+![Node-RED Architecture](images/flow.png)
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐
